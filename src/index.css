@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Dış container ve Table */
+.custom-blur-table .ant-table-wrapper,
+.custom-blur-table .ant-table,
+.custom-blur-table .ant-table-container {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease;
+}
+.custom-blur-table .ant-table-content {
+  background: transparent !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-blur-table .ant-table-thead > tr > th {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.custom-blur-table .ant-table-tbody > tr > td {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+
+.custom-blur-table .ant-table-expanded-row > td {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
 }
